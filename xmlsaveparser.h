@@ -24,6 +24,8 @@ public:
     void setItemResearchStarted(int ID, bool status);
     void setItemHasBlueprints(int ID, bool status);
     void setItemHasPrototype(int ID, bool status);
+    void setItemsAllResearch();
+    void resetItemsAllResearch();
 private:
     void parse();
     void parseCurrentMoney();

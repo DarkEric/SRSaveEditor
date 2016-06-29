@@ -107,3 +107,22 @@ void XMLSaveParser::setItemResearchStarted(int ID,bool status)
     items[ID].setResearchStarted(status);
 }
 
+void XMLSaveParser::setItemsAllResearch()
+{
+    for(auto& i:items)
+    {
+        i.setHasBlueprints(true);
+        i.setResearchStarted(false);
+        i.setHasPrototype(false);
+    }
+}
+
+void XMLSaveParser::resetItemsAllResearch()
+{
+    for(auto& i:items)
+    {
+        i.setHasBlueprints(false);
+        i.setResearchStarted(false);
+        i.setHasPrototype(false);
+    }
+}
