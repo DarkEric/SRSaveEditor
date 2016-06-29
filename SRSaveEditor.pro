@@ -14,9 +14,11 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    xmlsaveparser.cpp
+    xmlsaveparser.cpp \
+    item.cpp
 
 HEADERS  += mainwindow.h \
-    xmlsaveparser.h
+    xmlsaveparser.h \
+    item.h
 
 FORMS    += mainwindow.ui
